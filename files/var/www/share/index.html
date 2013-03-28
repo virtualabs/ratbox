@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Ratbox Files</title>
+
+		<!-- jQuery and jQuery UI (REQUIRED) -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+		<!-- elFinder CSS (REQUIRED) -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/elfinder.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/theme.css">
+
+		<!-- elFinder JS (REQUIRED) -->
+		<script type="text/javascript" src="js/elfinder.min.js"></script>
+
+		<!-- elFinder translation (OPTIONAL) -->
+		<script type="text/javascript" src="js/i18n/elfinder.fr.js"></script>
+
+		<!-- elFinder initialization (REQUIRED) -->
+		<script type="text/javascript" charset="utf-8">
+			$().ready(function() {
+				var elf = $('#elfinder').elfinder({
+					url : 'php/connector.php',  // connector URL (REQUIRED)
+					lang: 'fr',             // language (OPTIONAL)
+					resizable: 'false',
+					width: window.innerWidth-30,
+					height: window.innerHeight-130,
+				}).elfinder('instance');
+			});
+		</script>
+	</head>
+	<body>
+		<a href="../"><div id="ratbox" style="width: 6OOpx; height: 80px; background:url(../images/logo.png) center no-repeat;"></div></a>
+		<!-- Element where elFinder will be created (REQUIRED) -->
+		<div id="elfinder" style="width: 600px; height: 480px;"></div>
+
+	</body>
+</html>

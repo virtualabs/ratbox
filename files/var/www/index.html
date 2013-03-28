@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Ratbox</title>
+<link rel="stylesheet" href="style.css">
+<script src="js/jquery.min.js" language="javascript"></script>
+<script src="js/slides.js" language="javascript"></script>
+
+</head>
+<body>
+<script>
+    $(function(){
+        $("#cartouche").slides({
+            preload: true,
+            fadeSpeed: 350,
+            effect: 'fade',
+            crossfade: true,
+            hoverPause: true,
+            play: 4000,
+            pause: 1500,
+        });
+    });
+</script>
+<div id="page">
+    <div id="banner">
+        <div id="logo">
+        </div>
+    </div>
+    <div id="cartouche">
+        <div class="slides_container">
+            <div>
+                <img src="images/slide1.png" />
+            </div>
+            <div>
+                <img src="images/slide0.png" />
+            </div>
+            <div>
+                <img src="images/slide2.png" />
+            </div>
+            <div>
+                <img src="images/slide3.png" />
+            </div>
+            <div>
+                <img src="images/slide4.png" />
+            </div>
+        </div>
+    </div>
+    <ul id="links">
+        <li>
+            <a href="\\rat.box\ratbox" target='_'>
+            <div>
+                <img class="icon" src="images/ms.png" border="0"/>
+                <span class="desc">partage windows</span>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="share/" target='_'>
+            <div>
+                <img class="icon" src="images/ff.png" border="0"/>
+                <span class="desc">via le navigateur</span>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="ftp://rat.box/" target='_'>
+            <div>
+                <img class="icon" src="images/fz.png" border="0"/>
+                <span class="desc">via FTP</span>
+            </div>
+            </a>
+        </li>
+    </ul>
+    <div id="about">
+    <p>La Ratbox est un PirateBox basée sur un Raspberry Pi, un ordinateur personnel peu onéreux conçu sur une base ARM. Elle se base essentiellement sur des logiciels opensource, et permet à n'importe qui de partager librement des fichiers, sans garder de trace des échanges.</p>
+    <p>Ce projet est très librement inspiré du projet PirateBox initial, lancé par David Darts (<a href="http://wiki.daviddarts.com/PirateBox_DIY">http://wiki.daviddarts.com/PirateBox_DIY</a>), et est lui aussi opensource: la conception de la Ratbox ainsi que les briques logicielles permettent à tout un chacun de recréer sa propre Ratbox sont documentées et reproductibles.</p>
+    </div>
+</div>
+</body>
+</html>

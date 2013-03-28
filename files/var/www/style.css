@@ -1,0 +1,59 @@
+body { background: #eee }
+#page { width: 620px; margin: auto auto auto auto; border-left: 1px #ddd solid; border-right: 1px #ddd solid;}
+#banner  { width: 600px; height: 100px; }
+#logo { width: 518px; height: 100px; background: url(images/logo.png) no-repeat center; margin-left: auto; margin-right: auto; }
+#cartouche { border: solid 2px #333; width: 600px; height: 192px; margin-right: auto; margin-left: auto;}
+#about { width: 600px; font-family: 'Helvetica'; font-size: 24px; text-align: justify; color: #333; margin-left: auto; margin-right: auto;}
+.slides_container {
+    width:600px;
+    height:192px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slides_container div {
+    width:600px;
+    height:192px;
+    display:block;
+}
+ul.pagination { display: none; }
+ul#links {
+    padding-left: 0px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    list-style-type: none;
+}
+ul#links li {
+    width: 100%;
+    background: url(images/linkbg.png) repeat-x;
+    height: 80px;
+    border: solid 2px #aaa;
+    font-family: 'Helvetica';
+    font-size: 44px;
+    line-height: 80px;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+ul#links a {
+    text-decoration: none;
+}
+
+ul#links li span.desc {
+    text-decoration: none;
+    color: #333;
+}
+
+ul#links li:hover {
+    background: url(images/linkbg.png) repeat-x 0px -80px;
+    border-color: #333;
+}
+
+ul#links img {
+    float: left;
+    margin-left: 10px;
+    padding-right: 24px;
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+}
